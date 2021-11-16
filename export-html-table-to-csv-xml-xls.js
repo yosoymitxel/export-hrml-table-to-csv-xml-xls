@@ -6,7 +6,7 @@ function exportHTMLTableExcel(table) {
     let filename = nombreArchivo(table)
     var downloadLink;
     var dataType    = 'application/vnd.ms-excel';
-    var tableSelect = document.getElementById(tableID);
+    var tableSelect = document.getElementById(table);
     var tableHTML   = tableSelect.outerHTML.replace(/ /g, '%20');
     
     // Specify file name
