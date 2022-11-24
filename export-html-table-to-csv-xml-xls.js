@@ -37,7 +37,7 @@ function exportHTMLTableExcel(table) {
 function exportHTMLTableCSV(idTable) {
     let filename = nombreArchivo(idTable)
     var data     = []
-    var rows     = document.querySelectorAll("table tr")
+    var rows     = document.querySelectorAll("#"+idTable+" tr")
 
     for (let i = 0, iMax = rows.length; i < iMax; i++) {
         var row = [], cols = rows[i].querySelectorAll("td, th")
